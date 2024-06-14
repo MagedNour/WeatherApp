@@ -1,0 +1,146 @@
+:root{
+    --bg-main: #1E202B;
+    --bs-body-color: #B6B6B6;
+}
+body{
+    font-family: Roboto, "Open Sans", sans-serif;
+}
+.w-80{
+    width: 80%;
+}
+
+.bg-main{
+    background-color: var(--bg-main);
+}
+nav .navbar-brand img{
+    width: 64px;
+    height: 38px;
+}
+
+nav .logo-text h1{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+}
+nav .logo-text p{
+    color: rgb(191, 193, 200);
+    font-size: 10px;
+    margin: 0;
+}
+
+.navbar-nav .nav-link{
+    padding: 5px 25px !important;
+    border: 2px solid transparent;
+    border-radius: 30px;
+}
+
+.navbar-nav .nav-link.active{
+    border-color: #009ad8 ;
+    color: #009ad8;
+}
+
+
+.navbar-nav .nav-link:hover{
+    border-color: #009ad8 ;
+    color: #009ad8 !important;
+}
+
+main{
+    background-image: url("../src/imgs/banner.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+#searchInput:focus{
+    background-color: var(--bg-main);
+}
+#searchInput::placeholder{
+    color: #757575;
+    font-size: 14px;
+}
+
+.input-holder button{
+    color: white;
+    background-color: #009ad8;
+    border-radius: 30px;
+    padding: 0 40px;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    border: 0;
+}
+
+.weather-item{
+    background-color: #333544;
+    min-height: 100%;
+}
+
+.weather-item .item-header{
+    background-color: #2E303D;
+}
+
+#today .degree{
+    font-size: 90px;
+    font-weight: 700;
+}
+.item-body .degree{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.item-body .degree .min-deg{
+    font-size: 16px;
+    color: rgb(191, 193, 200);
+    font-weight: 300;
+}
+
+.forecast-icon img{
+    width: 90px;
+}
+.cloud-stat{
+    color: #009ad8;
+}
+.wind-stat span{
+    font-size: 14px;
+    color: rgb(191, 193, 200);
+}
+
+#tomorrow{
+    background-color: #272936;
+}
+#tomorrow .item-header{
+    background-color: #232531;
+}
+
+
+footer{
+    background-color: #272936;
+}
+
+footer .social-icons a{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1e202b;
+    color: #009ad8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    transition: all 0.5s;
+}
+
+footer .social-icons a:hover{
+    color: white;
+    background-color: #009ad8;
+}
+
+footer p{
+    color: rgb(191, 193, 200);
+    font-size: 14px;
+    font-weight: 300;
+}

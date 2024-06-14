@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-main py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-end" href="#">
+                <img src="./src/imgs/logo@2x.png" alt="logo-cloud">
+                <div class="logo-text ms-2 m-0">
+                    <h1>Weather</h1>
+                    <p>tagline goes here</p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item  mx-3">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">live Cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Contact</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <main class="bg-main">
+        <div class="container-lg py-5">
+            <div class="input-holder position-relative">
+                <input type="text" class="form-control rounded-pill p-3 bg-main border-0" id="searchInput"
+                    placeholder="Find your location...">
+                <button class="position-absolute">Find</button>
+            </div>
+
+            <div class="row my-5 gx-0 gy-3" id="weatherView">
+                <!-- <div class="col-4">
+                    <div class="weather-item rounded-start-3" id="today">
+                        <div class="item-header p-2 d-flex justify-content-between rounded-start-3">
+                            <span id="weekDay">Monday</span>
+                            <span id="todayDate">10June</span>
+                        </div>
+                        <div class="item-body px-3 py-3">
+                            <div class="location">Cairo</div>
+                            <div class="degree d-flex flex-wrap">
+                                <div class="num">29.4<sup>o</sup>C</div>
+                                <div class="forecast-icon">
+                                    <img src="https://cdn.weatherapi.com/weather/64x64/night/113.png"
+                                        alt="forecast-icon" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="cloud-stat">Clear</div>
+                            <div class="wind-stat mt-4">
+                                <span class="me-3"><img
+                                        src="https://routeweather.netlify.app/images/icon-umberella@2x.png" alt=""
+                                        width="21" height="21"> 20%</span>
+                                <span class="me-3"><img src="https://routeweather.netlify.app/images/icon-wind@2x.png"
+                                        alt="" width="23" height="21"> 18km/h</span>
+                                <span class="me-3"><img
+                                        src="https://routeweather.netlify.app/images/icon-compass@2x.png" alt=""
+                                        width="21" height="21"> East</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="weather-item" id="tomorrow">
+                        <div class="item-header p-2 d-flex justify-content-center">
+                            <span>Fiday</span>
+                        </div>
+                        <div class="item-body px-3 py-3 d-flex flex-column align-items-center">
+
+                            <div class="forecast-icon d-flex justify-content-center mt-3">
+                                <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48">
+                            </div>
+
+                            <div class="degree d-flex flex-column mt-3 text-center">
+                                <div class="num">29.4<sup>o</sup>C</div>
+                                <div class="min-deg">27.6<sup>o</sup></div>
+
+                            </div>
+                            <div class="cloud-stat mt-3">Clear</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="weather-item rounded-end-3">
+                        <div class="item-header p-2 d-flex justify-content-center">
+                            <span>Saturday</span>
+                        </div>
+                        <div class="item-body px-3 py-3 d-flex flex-column align-items-center">
+
+                            <div class="forecast-icon d-flex justify-content-center mt-3">
+                                <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48">
+                            </div>
+
+                            <div class="degree d-flex flex-column mt-3 text-center">
+                                <div class="num">29.4<sup>o</sup>C</div>
+                                <div class="min-deg">27.6<sup>o</sup></div>
+                            </div>
+                            <div class="cloud-stat mt-3">Clear</div>
+
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="container py-5">
+            <div class="footer-body ">
+                <div class="row mt-3 gy-3 justify-content-between">
+                    <div class="input-holder position-relative col-lg-8">
+                        <input type="text" class="form-control rounded-pill p-3 bg-main border-0" id="searchInput"
+                            placeholder="Enter your email to subscribe...">
+                        <button class="position-absolute">subscribe</button>
+                    </div>
+                    <div class="social-icons col-lg-3 d-flex">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="./JavaScript/bootstrap.bundle.min.js"></script>
+    <script src="./JavaScript/main.js"></script>
+</body>
+</html>
